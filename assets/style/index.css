@@ -1,0 +1,110 @@
+@import "./base.css";
+
+/* -------------------------------*/
+/*Banner                          */
+/* -------------------------------*/
+
+li.underline a {
+    text-decoration: underline;
+    text-decoration-color: #3865FF;
+}
+
+ .banner { 
+    min-height: 100vh;
+    width: 100%;
+    background: #fff url("../img/map.jpg") center center / cover no-repeat;
+}
+
+.overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(20 24 28 / 0.5);
+}
+
+
+section.overlay , section.banner {
+    min-height: calc(100vh - 56px);
+    display: grid;
+    place-items: center;
+}
+
+section.overlay div {
+    text-align: center;
+}
+
+section.overlay div p {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+section.overlay p + p {
+    margin-top: 5px;
+}
+
+section.overlay h2 {
+    font-weight: 400;
+    color: #f1f2f3;
+    text-transform: capitalize;
+}
+
+/* -------------------------------*/
+/*Maps                            */
+/* -------------------------------*/
+
+.map-heading {
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.heading {
+    padding: 40px;
+}
+
+.section-heading {
+    margin-top: 40px;
+    background-color: #f1f2f3;
+}
+
+.map-parent {
+    padding: 40px;
+    display: grid;
+    place-items: center;
+}
+.my-map {
+    display: grid;
+    width: min(100% - 30px, 1380px);
+    height: 800px;
+    background-color: #e7e7e7;
+    place-items: center;
+}
+
+.mapboxgl-ctrl-logo {
+    visibility: hidden;
+}
+
+.mesg {
+    display: none;
+    font-size: 22px;
+}
+
+.round {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+
+@keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
