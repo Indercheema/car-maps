@@ -1,3 +1,3 @@
-## Typing Master
+## Car Maps
 
-[Click here to PLAY](https://indercheema.github.io/car-maps/)
+[Click here to check demo](https://indercheema.github.io/car-maps/)
